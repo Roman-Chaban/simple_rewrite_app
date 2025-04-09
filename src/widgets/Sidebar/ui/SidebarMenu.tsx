@@ -53,7 +53,7 @@ export const SidebarMenu: FC = () => {
    return (
       <List
          tag='ul'
-         className='flex flex-col gap-5 pl-4'
+         className='flex flex-col gap-2 pl-4'
          itemClassName='relative'
          getItemKey={(item) => item.id}
          renderList={sidebarMenuList}
