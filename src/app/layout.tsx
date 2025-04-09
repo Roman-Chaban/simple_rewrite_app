@@ -31,7 +31,7 @@ export default function RootLayout({
          <body className={`bg-background-body ${nunito.className} antialiased`}>
             <Container
                className={clsx(
-                  'grid h-full w-full grid-cols-12 gap-[1.875rem] p-[1.25rem_2.5rem_1.5625rem_1.25rem]',
+                  'grid min-h-[100vh] w-full grid-cols-12 gap-[1.875rem] p-[1.25rem_2.5rem_1.5625rem_1.25rem]',
                )}
             >
                <Sidebar />

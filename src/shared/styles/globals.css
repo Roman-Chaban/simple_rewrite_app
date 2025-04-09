@@ -10,6 +10,11 @@
     --breakpoint-lg: 90rem;
 }
 
+html,
+body {
+    @apply min-h-[100vh];
+}
+
 button {
     @apply cursor-pointer;
 }
