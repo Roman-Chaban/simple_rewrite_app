@@ -3,6 +3,7 @@ interface SidebarMenuItem {
    title: string;
    href: string;
    icon: string;
+   iconActive: string;
 }
 
 type SidebarMenuList = Array<SidebarMenuItem>;
