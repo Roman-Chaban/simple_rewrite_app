@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+    --color-background-body: #f4f9fd;
+    --color-sidebar-shadow-overlay: 0 6px 58px 0 rgba(196, 203, 214, 0.1);
+    --color-sidebar-item: #7d8592;
+}
+
+html,
+body {
+    @apply w-full h-full;
+}

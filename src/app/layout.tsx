@@ -1,7 +1,20 @@
 import type { Metadata } from 'next';
 
-import '@/shared/styles/globals.css';
 import { Sidebar } from '@/widgets/Sidebar/ui/Sidebar';
+import { Container } from '@/shared/ui/Container/Container';
+
+import clsx from 'clsx';
+
+import '@/shared/styles/globals.css';
+
+import { Nunito_Sans } from 'next/font/google';
+
+const nunito = Nunito_Sans({
+   subsets: ['latin'],
+   variable: '--font-nunito',
+   display: 'swap',
+   weight: ['300', '400', '500', '600', '700', '800'],
+});
 
 export const metadata: Metadata = {
    title: 'Crm rewrite',
@@ -15,9 +28,15 @@ export default function RootLayout({
 }>) {
    return (
       <html lang='en'>
-         <body className={`antialiased`}>
-            <Sidebar />
-            {children}
+         <body className={`bg-background-body ${nunito.className} antialiased`}>
+            <Container
+               className={clsx(
+                  'grid h-full w-full grid-cols-12 gap-[1.875rem] p-[1.25rem_2.5rem_1.5625rem_1.25rem]',
+               )}
+            >
+               <Sidebar />
+               {children}
+            </Container>
          </body>
       </html>
    );
