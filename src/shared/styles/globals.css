@@ -6,11 +6,8 @@
     --color-sidebar-item: #7d8592;
     --color-sidebar-item-active: #3f8cff;
     --color-sidebar-button-shadow-overlay: 0 6px 12px 0 rgba(63, 140, 255, 0.26);
-}
 
-html,
-body {
-    @apply w-full h-full;
+    --breakpoint-lg: 90rem;
 }
 
 button {

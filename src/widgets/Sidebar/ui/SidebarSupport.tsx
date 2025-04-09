@@ -12,12 +12,12 @@ export const SidebarSupport: FC = () => {
    return (
       <Container
          className={clsx(
-            'w-full</Container> flex min-h-[10.5rem] max-w-[12.5rem] items-center justify-center px-4 pb-11',
+            'w-full</Container> flex min-h-[11.5rem] max-w-[12.5rem] flex-col justify-center gap-12 px-4 pb-11',
          )}
       >
          <Box
             className={clsx(
-               'bg-sidebar-item-active/10 relative flex min-h-[12.5rem] w-full max-w-[12.5rem] flex-col items-center justify-start rounded-3xl',
+               'bg-sidebar-item-active/10 relative flex min-h-[11.5rem] w-full max-w-[12.5rem] flex-col items-center justify-start rounded-3xl',
             )}
          >
             <Image
@@ -28,7 +28,7 @@ export const SidebarSupport: FC = () => {
                width={140}
                height={124}
             />
-            <Button className='bg-sidebar-item-active shadow-sidebar-button-shadow-overlay flex min-h-[3rem] w-full max-w-[8.0625rem] items-center justify-center gap-2 rounded-[0.875rem] font-bold text-white'>
+            <Button className='bg-sidebar-item-active shadow-sidebar-button-shadow-overlay relative bottom-5 flex min-h-[3rem] w-full max-w-[8.0625rem] items-center justify-center gap-2 rounded-[0.875rem] font-bold text-white'>
                <Image
                   priority
                   src={'/icons/sidebar/chat.svg'}
@@ -39,6 +39,16 @@ export const SidebarSupport: FC = () => {
                Support
             </Button>
          </Box>
+         <Button className='text-sidebar-item flex max-w-fit items-center justify-start gap-4 font-semibold'>
+            <Image
+               priority
+               src={'/icons/sidebar/logout.svg'}
+               alt='Logout icon'
+               width={24}
+               height={24}
+            />
+            Logout
+         </Button>
       </Container>
    );
 };
