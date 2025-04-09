@@ -1,11 +1,11 @@
 const enum SidebarRoutes {
    HOME = '/dashboard/home',
-   PROJECTS = '/dashboard/projects',
-   CALENDAR = '/dashboard/calendar',
-   VACATIONS = '/dashboard/vacations',
-   EMPLOYEES = '/dashboard/employees',
-   MESSENGER = '/dashboard/messenger',
-   INFO_PORTAL = '/dashboard/info-portal',
+   PROJECTS = '/projects',
+   CALENDAR = '/calendar',
+   VACATIONS = '/vacations',
+   EMPLOYEES = '/employees',
+   MESSENGER = '/messenger',
+   INFO_PORTAL = '/info-portal',
 }
 
 export { SidebarRoutes };
