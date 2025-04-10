@@ -1,7 +1,6 @@
-import { type HTMLAttributes, type ReactNode, type FC } from 'react';
+import { type HTMLAttributes, type FC } from 'react';
 
 interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
-   children: ReactNode;
    className?: string;
 }
 

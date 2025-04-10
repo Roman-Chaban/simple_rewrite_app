@@ -1,4 +1,9 @@
-import { type ElementType, type ReactNode } from 'react';
+import {
+   type ComponentPropsWithoutRef,
+   type CSSProperties,
+   type ElementType,
+   type ReactNode,
+} from 'react';
 
 import clsx from 'clsx';
 
@@ -8,11 +13,11 @@ type HeadingOwnProps<E extends ElementType = 'h1'> = {
    children: ReactNode;
    className?: string;
    id?: string;
-   style?: React.CSSProperties;
+   style?: CSSProperties;
 };
 
 type HeadingProps<E extends ElementType> = HeadingOwnProps<E> &
-   Omit<React.ComponentPropsWithoutRef<E>, keyof HeadingOwnProps>;
+   Omit<ComponentPropsWithoutRef<E>, keyof HeadingOwnProps>;
 
 export const Heading = <E extends ElementType = 'h1'>({
    as,
