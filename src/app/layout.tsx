@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 import { Sidebar } from '@/widgets/Sidebar/ui/Sidebar';
-import { Container } from '@/shared/ui/Container/Container';
-
-import clsx from 'clsx';
 
 import '@/shared/styles/globals.css';
 
 import { Nunito_Sans } from 'next/font/google';
+import { Header } from '@/widgets/Header/ui/Header';
+import { LayoutContainer } from '@/shared/ui/LayoutContainer/LayoutContainer';
+import { BodyWrapper } from '@/shared/ui/BodyWrapper/BodyWrapper';
 
 const nunito = Nunito_Sans({
    subsets: ['latin'],
@@ -28,15 +28,14 @@ export default function RootLayout({
 }>) {
    return (
       <html lang='en'>
-         <body className={`bg-background-body ${nunito.className} antialiased`}>
-            <Container
-               className={clsx(
-                  'grid min-h-[100vh] w-full grid-cols-12 gap-[1.875rem] p-[1.25rem_2.5rem_1.5625rem_1.25rem]',
-               )}
-            >
+         <body className={` ${nunito.className} antialiased`}>
+            <BodyWrapper>
                <Sidebar />
-               {children}
-            </Container>
+               <LayoutContainer>
+                  <Header />
+                  {children}
+               </LayoutContainer>
+            </BodyWrapper>
          </body>
       </html>
    );
