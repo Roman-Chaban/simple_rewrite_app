@@ -1,5 +1,9 @@
+import { type FC } from 'react';
+
 import Home from '../page';
 
-export default function Dashboard() {
+export const Dashboard: FC = () => {
    return <Home />;
-}
+};
+
+export default Dashboard;
