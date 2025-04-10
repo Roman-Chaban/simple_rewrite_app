@@ -6,12 +6,10 @@ import Image from 'next/image';
 
 import { useForm } from 'react-hook-form';
 
+import { FormValues } from '../model/types';
+
 import { RegisterInput } from '@/shared/ui/RegisterInput/RegisterInput';
 import { Label } from '@/shared/ui/Label/Label';
-
-interface FormValues {
-   search: string;
-}
 
 export const HeaderSearch: FC = () => {
    const { register } = useForm<FormValues>({

@@ -1,12 +1,9 @@
 import { type FC } from 'react';
 
+import { InformationBarProps } from '../model/types';
+
 import { Box } from '@/shared/ui/Box/Box';
 import { Heading } from '@/shared/ui/Heading/Heading';
-
-interface InformationBarProps {
-   greetTitle?: string;
-   title: string;
-}
 
 export const InformationBar: FC<InformationBarProps> = ({
    greetTitle,
