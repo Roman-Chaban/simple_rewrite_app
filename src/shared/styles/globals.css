@@ -8,6 +8,8 @@
     --color-sidebar-button-shadow-overlay: 0 6px 12px 0 rgba(63, 140, 255, 0.26);
 
     --breakpoint-lg: 90rem;
+
+    --radius-small-sm: 0.875rem;
 }
 
 html,
