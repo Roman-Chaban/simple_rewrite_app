@@ -8,8 +8,8 @@ interface SidebarContentProps {
 
 export const SidebarContent: FC<SidebarContentProps> = ({ children }) => {
    return (
-      <aside className='col-span-2 w-full max-w-[12.5rem] max-lg:col-span-3 max-lg:max-w-50'>
-         <Container className='shadow-sidebar-shadow-overlay col-span-4 flex h-full w-full flex-col justify-between gap-20 rounded-3xl bg-white'>
+      <aside className='w-full max-w-[12.5rem] max-lg:max-w-50'>
+         <Container className='col-span-4 flex h-full w-full flex-col justify-between gap-20 rounded-3xl bg-white shadow-xs'>
             {children}
          </Container>
       </aside>

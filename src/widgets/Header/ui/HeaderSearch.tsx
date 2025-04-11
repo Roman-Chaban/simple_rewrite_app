@@ -19,7 +19,7 @@ export const HeaderSearch: FC = () => {
    return (
       <Label
          htmlFor='search'
-         className='rounded-small-sm flex min-h-12 w-full max-w-[25.75rem] items-center gap-3 bg-white px-[1.1875rem] shadow-sm inset-shadow-2xs'
+         className='rounded-small-sm flex min-h-12 w-full max-w-[25.75rem] items-center gap-3 bg-white px-[1.1875rem] shadow-xs'
       >
          <Image
             src='/icons/header/search.svg'

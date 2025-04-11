@@ -9,6 +9,9 @@
     --color-natural-black: #0a1629;
 
     --breakpoint-lg: 90rem;
+    --breakpoint-md: 78.125rem;
+
+    --text-size-sl: 1.375rem;
 
     --radius-small-sm: 0.875rem;
 }

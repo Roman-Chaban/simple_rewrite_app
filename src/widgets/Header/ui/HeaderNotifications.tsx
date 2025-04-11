@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export const HeaderNotifications: FC = () => {
    return (
-      <Box className='w-full max-w-[15.875rem]'>
-         <Button className='rounded-small-sm flex h-full min-h-12 w-full max-w-12 items-center justify-center bg-white shadow-sm inset-shadow-2xs'>
+      <Box className='flex w-full max-w-[15.875rem] justify-end'>
+         <Button className='rounded-small-sm flex h-full min-h-12 w-full max-w-12 items-center justify-center bg-white shadow-xs'>
             <Image
                src={'/icons/header/bell.svg'}
                alt='Bell icon'
