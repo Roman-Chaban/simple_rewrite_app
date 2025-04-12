@@ -11,7 +11,7 @@ export const InformationBar: FC<InformationBarProps> = ({
    title,
 }) => {
    return (
-      <Box className='flex flex-col gap-2.5'>
+      <Box className='col-span-12 flex flex-col gap-2.5'>
          <Span className='text-sidebar-item'>{greetTitle}</Span>
          <Heading level={2} className='text-natural-black text-4xl font-bold'>
             {title}
