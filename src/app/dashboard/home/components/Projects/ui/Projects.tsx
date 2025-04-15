@@ -2,6 +2,7 @@ import { type FC } from 'react';
 
 import { ComponentWrapper } from '@/features/ui/ComponentWrapper/ComponentWrapper';
 import { Container } from '@/shared/ui/Container/Container';
+import { SummaryInformationBar } from '@/features/ui/SummaryInformationBar/ui/SummaryInformationBar';
 
 const projectsListDto = [
    { id: 1, content: 'project_1' },
@@ -12,6 +13,7 @@ const projectsListDto = [
 export const Projects: FC = () => {
    return (
       <Container className='flex h-full w-full flex-2 flex-col gap-5'>
+         <SummaryInformationBar title='Projects' />
          {projectsListDto.map((project) => (
             <ComponentWrapper
                key={project.id}
