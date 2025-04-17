@@ -7,9 +7,13 @@
     --color-sidebar-item-active: #3f8cff;
     --color-sidebar-button-shadow-overlay: 0 6px 12px 0 rgba(63, 140, 255, 0.26);
     --color-natural-black: #0a1629;
+    --color-modal: rgba(33, 85, 163, 0.16);
 
     --breakpoint-lg: 90rem;
     --breakpoint-md: 78.125rem;
+    --breakpoint-sm: 64rem;
+    --breakpoint-xs: 48rem;
+    --breakpoint-xxs: 30rem;
 
     --text-size-sl: 1.375rem;
 

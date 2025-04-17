@@ -8,7 +8,11 @@ import { Button } from '@/shared/ui/Button/Button';
 
 import clsx from 'clsx';
 
-export const SidebarSupport: FC = () => {
+interface SidebarSupportProps {
+   onModalOpen: () => void;
+}
+
+export const SidebarSupport: FC<SidebarSupportProps> = ({ onModalOpen }) => {
    return (
       <Container
          className={clsx(
@@ -28,7 +32,10 @@ export const SidebarSupport: FC = () => {
                width={140}
                height={124}
             />
-            <Button className='bg-sidebar-item-active shadow-sidebar-button-shadow-overlay relative bottom-5 flex min-h-[3rem] w-full max-w-[8.0625rem] items-center justify-center gap-2 rounded-[0.875rem] font-bold text-white'>
+            <Button
+               onClick={() => onModalOpen()}
+               className='bg-sidebar-item-active shadow-sidebar-button-shadow-overlay relative bottom-5 flex min-h-[3rem] w-full max-w-[8.0625rem] items-center justify-center gap-2 rounded-[0.875rem] font-bold text-white'
+            >
                <Image
                   priority
                   src={'/icons/sidebar/chat.svg'}
