@@ -9,3 +9,8 @@ interface SidebarMenuItem {
 type SidebarMenuList = Array<SidebarMenuItem>;
 
 export type { SidebarMenuItem, SidebarMenuList };
+
+export interface SidebarModalProps {
+   isModalOpen: boolean;
+   handleCloseModal: () => void;
+}
