@@ -1,31 +1,31 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-    --color-background-body: #f4f9fd;
-    --color-sidebar-shadow-overlay: 0 6px 58px 0 rgba(196, 203, 214, 0.1);
-    --color-sidebar-item: #7d8592;
-    --color-sidebar-item-active: #3f8cff;
-    --color-sidebar-button-shadow-overlay: 0 6px 12px 0 rgba(63, 140, 255, 0.26);
-    --color-natural-black: #0a1629;
-    --color-modal: rgba(33, 85, 163, 0.16);
-    --color-select-border: #d8e0f0;
+   --color-background-body: #f4f9fd;
+   --color-sidebar-shadow-overlay: 0 6px 58px 0 rgba(196, 203, 214, 0.1);
+   --color-sidebar-item: #7d8592;
+   --color-sidebar-item-active: #3f8cff;
+   --color-sidebar-button-shadow-overlay: 0 6px 12px 0 rgba(63, 140, 255, 0.26);
+   --color-natural-black: #0a1629;
+   --color-modal: rgba(33, 85, 163, 0.16);
+   --color-select-border: #d8e0f0;
 
-    --breakpoint-lg: 90rem;
-    --breakpoint-md: 78.125rem;
-    --breakpoint-sm: 64rem;
-    --breakpoint-xs: 48rem;
-    --breakpoint-xxs: 30rem;
+   --breakpoint-lg: 90rem;
+   --breakpoint-md: 78.125rem;
+   --breakpoint-sm: 64rem;
+   --breakpoint-xs: 48rem;
+   --breakpoint-xxs: 30rem;
 
-    --text-size-sl: 1.375rem;
+   --text-size-sl: 1.375rem;
 
-    --radius-small-sm: 0.875rem;
+   --radius-small-sm: 0.875rem;
 }
 
 html,
 body {
-    @apply min-h-[100vh];
+   @apply min-h-[100vh];
 }
 
 button {
-    @apply cursor-pointer;
+   @apply cursor-pointer;
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, type FC } from 'react';
+import { useCallback, useState, type FC } from 'react';
 
 import { SidebarLogo } from './SidebarLogo';
 import { SidebarMenu } from './SidebarMenu';
@@ -9,12 +9,18 @@ import { SidebarContent } from './SidebarContent';
 import { SupportModal } from '../../../app/dashboard/home/components/SupportModal/ui/SupportModal';
 import { Box } from '@/shared/ui/Box/Box';
 
-export const Sidebar: FC = () => {
-   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+type ModalOpen = boolean;
 
-   const handleCloseModal = () => {
+export const Sidebar: FC = () => {
+   const [isModalOpen, setIsModalOpen] = useState<ModalOpen>(false);
+
+   const handleCloseModal = useCallback((): void => {
       setIsModalOpen(false);
-   };
+   }, [setIsModalOpen]);
+
+   const handleOpenModal = useCallback((): void => {
+      setIsModalOpen(true);
+   }, [setIsModalOpen]);
 
    return (
       <SidebarContent>
@@ -22,7 +28,7 @@ export const Sidebar: FC = () => {
             <SidebarLogo />
             <SidebarMenu />
          </Box>
-         <SidebarSupport onModalOpen={() => setIsModalOpen(true)} />
+         <SidebarSupport onModalOpen={handleOpenModal} />
          <SupportModal
             isModalOpen={isModalOpen}
             handleCloseModal={handleCloseModal}

@@ -7,7 +7,7 @@ import '@/shared/styles/globals.css';
 import { Nunito_Sans } from 'next/font/google';
 import { Header } from '@/widgets/Header/ui/Header';
 import { LayoutContainer } from '@/shared/ui/LayoutContainer/LayoutContainer';
-import { BodyWrapper } from '@/shared/ui/BodyWrapper/BodyWrapper';
+import { GlobalWrapper } from '@/shared/ui/GlobalWrapper/GlobalWrapper';
 
 const nunito = Nunito_Sans({
    subsets: ['latin'],
@@ -29,14 +29,14 @@ export default function RootLayout({
 }>) {
    return (
       <html lang='en'>
-         <body className={` ${nunito.className} antialiased`}>
-            <BodyWrapper>
+         <body className={`${nunito.className} antialiased`}>
+            <GlobalWrapper>
                <Sidebar />
                <LayoutContainer>
                   <Header />
                   {children}
                </LayoutContainer>
-            </BodyWrapper>
+            </GlobalWrapper>
          </body>
       </html>
    );
