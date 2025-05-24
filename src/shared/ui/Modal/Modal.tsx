@@ -11,11 +11,7 @@ interface ModalProps {
    onModalClose: () => void;
 }
 
-export const Modal: FC<ModalProps> = ({
-   children,
-   isModalOpen,
-   onModalClose,
-}) => {
+export const Modal: FC<ModalProps> = ({ children, isModalOpen, onModalClose }) => {
    if (typeof window === 'undefined') return null;
 
    const handleContainerClick = () => onModalClose();

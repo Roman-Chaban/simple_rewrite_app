@@ -29,10 +29,7 @@ export const Sidebar: FC = () => {
             <SidebarMenu />
          </Box>
          <SidebarSupport onModalOpen={handleOpenModal} />
-         <SupportModal
-            isModalOpen={isModalOpen}
-            handleCloseModal={handleCloseModal}
-         />
+         <SupportModal isModalOpen={isModalOpen} handleCloseModal={handleCloseModal} />
       </SidebarContent>
    );
 };

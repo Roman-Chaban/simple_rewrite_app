@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 
 import { Container } from '@/shared/ui/Container/Container';
-import { InformationBar } from '@/widgets/InformationBar/ui/InformationBar';
+import { InformationBar } from '@/widgets/Sidebar/InformationBar/ui/InformationBar';
 import { Box } from '@/shared/ui/Box/Box';
 import { Workload } from './components/Workload/ui/Workload';
 import { NearestEvents } from './components/NearestEvents/ui/NearestEvents';
